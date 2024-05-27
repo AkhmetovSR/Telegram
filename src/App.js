@@ -21,7 +21,7 @@ function App() {
             <Line2/>
             <motion.div
                 className={"ImgDiv"}
-                initial={{opacity: 0, scale: 0.7}}
+                initial={{opacity: 0, scale: 0.5}}
                 animate={{opacity: 1, scale: 0.8}}
                 transition={{
                     duration: 0.1,
