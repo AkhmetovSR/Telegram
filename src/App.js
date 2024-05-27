@@ -22,7 +22,7 @@ function App() {
         <BrowserRouter>
             <div className={"Main"}>
                 <Routes>
-                    <Route path="/main" element={<FirstPage/>}/>
+                    <Route path="/" element={<FirstPage/>}/>
                     <Route path="/invite" element={<SecondPage/>}/>
                 </Routes>
                 <Options/>

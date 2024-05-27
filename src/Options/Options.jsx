@@ -8,7 +8,7 @@ import {NavLink} from "react-router-dom";
 function Options() {
     return (
         <div className={"Option"}>
-            <NavLink to="/main" className={"First"}>
+            <NavLink to="/" className={"First"}>
                 <div><img className={"Earn"} src={Eran} alt="mix"/></div>
                 <div>Earn</div>
             </NavLink>
