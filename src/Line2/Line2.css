@@ -10,11 +10,11 @@
 
 .coin{
     /*border: 1px solid red;*/
-    width: 10vw;
+    width: 12vw;
 }
 
 .quantity{
-    font-size: 30px;
+    font-size: 40px;
     font-family: "Inter Semi Bold";
     font-weight: bold;
     /*border: 1px solid red;*/
