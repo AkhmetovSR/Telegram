@@ -2,6 +2,8 @@
 import './App.css'
 import mix from "./resource/circle1.png"
 import Options from "./Options/Options.jsx";
+import Line1 from "./Line1/Line1.jsx";
+import Line2 from "./Line2/Line2.jsx";
 
 window.Telegram.WebApp.ready(); window.Telegram.WebApp.expand();
 const tg = window.Telegram.WebApp;
@@ -13,7 +15,8 @@ function closeApp(){
 function App() {
   return (
       <div className={"Main"}>
-          <div className={"userName"}>{tg.initDataUnsafe?.user?.username}</div>
+          <Line1 />
+          <Line2 />
           <div className={"ImgDiv"}>
               <div className={"divImg"}>
                   <img className={"Img"} src={mix} alt="mix"/>

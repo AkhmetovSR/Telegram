@@ -1,0 +1,31 @@
+.Line2{
+    display: grid;
+    grid-template-columns: auto auto;
+    /*align-content: center;*/
+    /*border: 1px solid red;*/
+    width: 99vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.coin{
+    /*border: 1px solid red;*/
+    width: 10vw;
+}
+
+.quantity{
+    font-size: 30px;
+    font-family: "Inter Semi Bold";
+    font-weight: bold;
+    /*border: 1px solid red;*/
+    color: white;
+}
+/*.goldFrame{*/
+/*    margin: 5px;*/
+/*    !*border: 1px solid white;*!*/
+/*    width: 40vw;*/
+/*    height: 7vh;*/
+/*    border-radius: 30px;*/
+/*    background-image: radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #fac83d 25%, #5d4a1f 62.5%, #5d4a1f 100%);*/
+/*}*/
+
