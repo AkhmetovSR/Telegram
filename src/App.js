@@ -2,7 +2,7 @@
 import './App.css'
 import mix from "./resource/mix.jpg.png"
 
-// window.Telegram.WebApp.ready(); window.Telegram.WebApp.expand();
+window.Telegram.WebApp.ready(); window.Telegram.WebApp.expand();
 const tg = window.Telegram.WebApp;
 
 function closeApp(){
