@@ -13,7 +13,12 @@ function closeApp(){
 function App() {
   return (
       <div className={"Main"}>
-          <div className={"ImgDiv"}><img className={"Img"} src={mix} alt="mix"/></div>
+          <div>{tg.initDataUnsafe?.user?.username}</div>
+          <div className={"ImgDiv"}>
+              <div className={"divImg"}>
+                  <img className={"Img"} src={mix} alt="mix"/>
+              </div>
+          </div>
           <Options />
           {/*<div className={"BtnDiv"}><button className={"Btn"} onClick={closeApp}>Закрыть</button></div>*/}
       </div>
