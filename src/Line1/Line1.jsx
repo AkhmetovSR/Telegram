@@ -1,5 +1,6 @@
 import "./Line1.css"
 import info from '../resource/info.png'
+import {motion} from "framer-motion";
 
 const tg = window.Telegram.WebApp;
 
