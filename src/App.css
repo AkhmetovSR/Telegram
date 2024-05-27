@@ -1,6 +1,7 @@
 .Main{
     background-color: black;
     display: grid;
+    grid-template-rows: 50vh 10vh;
     align-content: center;
     justify-items: center;
     width: 100vw;

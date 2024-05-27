@@ -1,0 +1,33 @@
+.Option{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 1px solid gray;
+    border-radius: 15px;
+    width: 75vw;
+    height: 11vh;
+}
+
+.First, .Second, .Third{
+    text-align: center;
+    color: white;
+    align-self: center;
+    height: 90%;
+    border-right: 1px solid grey;
+
+}
+.Second{
+
+}
+.Third{
+
+}
+.Fourth{
+    text-align: center;
+    color: white;
+    align-self: center;
+    height: 90%;
+}
+
+.Earn{
+    width: 40%;
+}
