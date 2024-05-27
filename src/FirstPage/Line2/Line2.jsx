@@ -1,5 +1,5 @@
 import "./Line2.css"
-import coin from '../resource/coin.png'
+import coin from '../../resource/coin.png'
 
 const tg = window.Telegram.WebApp;
 

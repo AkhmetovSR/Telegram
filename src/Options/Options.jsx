@@ -3,18 +3,19 @@ import Eran from "../resource/Earn.png";
 import Invite from '../resource/Invite.png'
 import Boost from '../resource/Boost.png'
 import Airdrop from '../resource/Airdrop.png'
+import {NavLink} from "react-router-dom";
 
 function Options() {
     return (
         <div className={"Option"}>
-            <div className={"First"}>
+            <NavLink to="/main" className={"First"}>
                 <div><img className={"Earn"} src={Eran} alt="mix"/></div>
                 <div>Earn</div>
-            </div>
-            <div className={"Second"}>
-                <div><img className={"Earn"} src={Invite} alt="mix"/></div>
+            </NavLink>
+            <NavLink to="/invite" className={"Second"}>
+                <div ><img className={"Earn"} src={Invite} alt="mix"/></div>
                 <div>invite</div>
-            </div>
+            </NavLink>
             <div className={"Third"}>
                 <div><img className={"Earn"} src={Boost} alt="mix"/></div>
                 <div>Boost</div>

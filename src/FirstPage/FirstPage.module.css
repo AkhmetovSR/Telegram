@@ -1,0 +1,18 @@
+.FirstPage{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    justify-items: center;
+    /*align-items: center;*/
+    /*border: 1px solid red;*/
+}
+
+.ImgDiv{
+    display: grid;
+    /*border: 1px solid red;*/
+    justify-items: center;
+    /*align-items: center;*/
+}
+
+.Img{
+    width: 80%;
+}

@@ -7,18 +7,17 @@
 }
 
 .userName{
-    margin: 10px;
     height: auto;
     /*border: 1px solid red;*/
     color: white;
     text-align: center;
     font-family: "Arial";
     font-size: 25px;
-    text-shadow: 0 0 10px #64ff00,
-    0 0 20px #64ff00,
-    0 0 40px #64ff00,
-    0 0 80px #64ff00,
-    0 0 120px #64ff00;
+    /*text-shadow: 0 0 10px #64ff00,*/
+    /*0 0 20px #64ff00,*/
+    /*0 0 40px #64ff00,*/
+    /*0 0 80px #64ff00,*/
+    /*0 0 120px #64ff00;*/
 }
 
 .divImgInfo{
@@ -27,7 +26,6 @@
     justify-items: end;
 }
 .imgInfo{
-    margin: 10px;
     width: 7%;
     /*border: 1px solid red;*/
 }

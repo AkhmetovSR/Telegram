@@ -2,7 +2,7 @@
     background: #090909;
             /*radial-gradient(circle, rgba(2,0,36,1) 10%, rgb(0, 40, 199) 20%, rgb(0, 0, 0) 50%);*/
     display: grid;
-    grid-template-rows: auto auto auto 50vh 10vh;
+    grid-template-rows: auto;
     /*align-content: center;*/
     justify-items: center;
     width: 100vw;
