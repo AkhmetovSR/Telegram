@@ -4,11 +4,12 @@
     border: 1px solid gray;
     border-radius: 15px 15px 0 0;
     width: 80vw;
-    height: 10vh;
+    height: 12vh;
     position: absolute;
     bottom: 0;
     background-color: #7e7e7e;
     opacity: 80%;
+    align-content: center;
 }
 
 .First, .Second, .Third{

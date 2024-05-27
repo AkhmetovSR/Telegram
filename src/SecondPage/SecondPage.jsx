@@ -7,7 +7,7 @@ const tg = window.Telegram.WebApp;
 function SecondPage() {
     return (
         <div className={s.SecondPage}>
-            <motion.div  animate={{ transform: "translateX(100px)" }} transition={{type: "spring", stiffness: 100}}>
+            <motion.div  animate={{ transform: "translateX(120px)" }} transition={{type: "spring", stiffness: 250}}>
                 <img className={s.img} src={inviteBig} alt="invite"/>
             </motion.div>
 
