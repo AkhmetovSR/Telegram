@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.css'
-import mix from "./resource/mix.jpg"
+import mix from "./resource/circle1.png"
 
 window.Telegram.WebApp.ready(); window.Telegram.WebApp.expand();
 const tg = window.Telegram.WebApp;
