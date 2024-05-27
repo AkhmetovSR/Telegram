@@ -3,7 +3,11 @@
     grid-template-rows: auto auto auto auto;
     justify-items: center;
     /*align-items: center;*/
-    /*border: 1px solid red;*/
+    /*border: 10px solid red;*/
+    /*background-color: #090909;*/
+    /*opacity: 0;*/
+    color: red;
+    position: absolute;
 }
 
 .ImgDiv{
@@ -15,4 +19,11 @@
 
 .Img{
     width: 80%;
+}
+
+.startMining{
+    background-color: white;
+    width: 40%;
+    height: 5vh;
+    border-radius: 20px;
 }

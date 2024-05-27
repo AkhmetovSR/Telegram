@@ -8,23 +8,30 @@ import {motion} from "framer-motion";
 import {BrowserRouter, Router, Route, Routes} from "react-router-dom";
 import FirstPage from "./FirstPage/FirstPage.jsx";
 import SecondPage from "./SecondPage/SecondPage.jsx";
+import Matrix from "./FirstPage/Line1/Matrix";
 
+const tg = window.Telegram.WebApp;
 window.Telegram.WebApp.ready();
 window.Telegram.WebApp.expand();
-const tg = window.Telegram.WebApp;
+
 
 function closeApp() {
     tg.close();
 }
 
+
 function App() {
     return (
         <BrowserRouter>
+
             <div className={"Main"}>
+                <FirstPage/>
+                <Matrix/>
                 <Routes>
                     <Route path="/" element={<FirstPage/>}/>
                     <Route path="/invite" element={<SecondPage/>}/>
                 </Routes>
+
                 <Options/>
                 {/*<div className={"BtnDiv"}><button className={"Btn"} onClick={closeApp}>Закрыть</button></div>*/}
             </div>
