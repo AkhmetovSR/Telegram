@@ -9,6 +9,9 @@
     max-height: calc(var(--tg-viewport-height, 100%) - 4px);
 
 }
+.userName{
+    color: white;
+}
 
 .divImg{
     /*border: 1px solid red;*/

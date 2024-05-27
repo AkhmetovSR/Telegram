@@ -13,7 +13,7 @@ function closeApp(){
 function App() {
   return (
       <div className={"Main"}>
-          <div>{tg.initDataUnsafe?.user?.username}</div>
+          <div className={"userName"}>{tg.initDataUnsafe?.user?.username}</div>
           <div className={"ImgDiv"}>
               <div className={"divImg"}>
                   <img className={"Img"} src={mix} alt="mix"/>
