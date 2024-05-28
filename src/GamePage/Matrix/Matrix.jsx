@@ -1,9 +1,6 @@
 import {useEffect, useRef} from "react";
 import s from "./Matrix.module.css"
 
-
-
-
 const Matrix = () => {
 
     const canvasRef = useRef(0);

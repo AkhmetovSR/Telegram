@@ -1,0 +1,42 @@
+body {
+    overflow: hidden;
+}
+.Black {
+    height: 99vh;
+    width: 99vw;
+    background-color: black;
+    /*border: 1px solid #00ff15;*/
+    align-self: center;
+    opacity: 70%;
+}
+
+.StartPage {
+    color: white;
+    /*background-size: 90vw;*/
+    background-color: black;
+    background-image: url("../resource/mask.png");
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*border: 3px solid red;*/
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    /*position: absolute;*/
+}
+
+
+
+.StartMining {
+    /*border: 1px solid red;*/
+    position: absolute;
+    bottom: 10%;
+    right: 30%;
+    background-color: red;
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: Arial;
+    font-weight: bold;
+}

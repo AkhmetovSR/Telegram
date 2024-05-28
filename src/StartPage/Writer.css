@@ -1,0 +1,21 @@
+.Writer{
+    width: 100%;
+    /*border: 1px solid red;*/
+    /*display: grid;*/
+    /*justify-content: center;*/
+    align-content: center;
+    display: block;
+}
+.HelloText{
+    padding: 10px;
+    color: #00FF00FF;
+    /*font-weight: bold;*/
+    font-size: 30px;
+    /*border: 1px solid red;*/
+    width: 100%;
+}
+.Cursor{
+    padding: 20px;
+    color: #00FF00FF;
+    font-size: 30px;
+}

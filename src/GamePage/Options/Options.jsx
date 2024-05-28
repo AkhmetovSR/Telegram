@@ -1,8 +1,8 @@
 import "./Options.css"
-import Eran from "../resource/Earn.png";
-import Invite from '../resource/Invite.png'
-import Boost from '../resource/Boost.png'
-import Airdrop from '../resource/Airdrop.png'
+import Eran from "../../resource/Earn.png";
+import Invite from '../../resource/Invite.png'
+import Boost from '../../resource/Boost.png'
+import Airdrop from '../../resource/Airdrop.png'
 import {NavLink} from "react-router-dom";
 
 function Options() {
