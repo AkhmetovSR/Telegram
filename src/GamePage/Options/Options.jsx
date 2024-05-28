@@ -1,4 +1,4 @@
-import "./Options.css"
+import s from "./Options.module.css"
 import Eran from "../../resource/Earn.png";
 import Invite from '../../resource/Invite.png'
 import Boost from '../../resource/Boost.png'
@@ -7,23 +7,28 @@ import {NavLink} from "react-router-dom";
 
 function Options() {
     return (
-        <div className={"Option"}>
-            <NavLink to="/" className={"First"}>
-                <div><img className={"Earn"} src={Eran} alt="mix"/></div>
+        <div className={s.Option}>
+
+            <NavLink to="/" className={s.First}>
+                <div className={s.divImg}><img className={s.Earn} src={Eran} alt="mix"/></div>
                 <div>Earn</div>
             </NavLink>
-            <NavLink to="/invite" className={"Second"}>
-                <div ><img className={"Earn"} src={Invite} alt="mix"/></div>
+
+            <NavLink to="/invite" className={s.Second}>
+                <div className={s.divImg}><img className={s.Earn} src={Invite} alt="mix"/></div>
                 <div>invite</div>
             </NavLink>
-            <div className={"Third"}>
-                <div><img className={"Earn"} src={Boost} alt="mix"/></div>
+
+            <div className={s.Third}>
+                <div className={s.divImg}><img className={s.Earn} src={Boost} alt="mix"/></div>
                 <div>Boost</div>
             </div>
-            <div className={"Fourth"}>
-                <div><img className={"Earn"} src={Airdrop} alt="mix"/></div>
+
+            <div className={s.Fourth}>
+                <div className={s.divImg}><img className={s.Earn} src={Airdrop} alt="mix"/></div>
                 <div>Airdrop</div>
             </div>
+
         </div>
     );
 }

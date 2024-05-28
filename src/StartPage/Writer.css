@@ -10,7 +10,8 @@
     padding: 10px;
     color: #00FF00FF;
     /*font-weight: bold;*/
-    font-size: 30px;
+    font-family: Consolas;
+    font-size: 25px;
     /*border: 1px solid red;*/
     width: 100%;
 }

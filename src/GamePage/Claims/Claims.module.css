@@ -1,0 +1,45 @@
+.Claims{
+    background-color: #1f1f1f;
+    border-radius: 15px;
+    opacity: 80%;
+    height: 20%;
+    width: 70vw;
+    /*border: 2px solid greenyellow;*/
+    position: absolute;
+    top: 15vh;
+    left: 15vw;
+    color: white;
+    display: grid;
+    grid-template-rows: 40% 60%;
+    padding: 2%;
+}
+.UserName{
+    /*border: 2px solid greenyellow;*/
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+.CoinClaim{
+    /*border: 2px solid greenyellow;*/
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 2%;
+}
+.Coin{
+    padding: 2%;
+    /*border: 1px solid greenyellow;*/
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+.Claim{
+    /*border: 1px solid greenyellow;*/
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.imgCoin{
+    width: 100%;
+}

@@ -1,15 +1,16 @@
 .Option{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    border: 1px solid gray;
-    border-radius: 15px 15px 0 0;
+    background-color: #1f1f1f;
+    border-radius: 15px;
+    opacity: 80%;
     width: 80vw;
     height: 12vh;
     position: absolute;
-    bottom: 0;
-    background-color: #7e7e7e;
-    opacity: 80%;
+    bottom: 10vh;
+    left: 10vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     align-content: center;
+    justify-content: center;
 }
 
 .First, .Second, .Third{
@@ -18,9 +19,10 @@
     align-self: center;
     height: 90%;
     border-right: 2px solid #b4b4b4;
+
 }
 .Second{
-
+    /*border: 2px solid green;*/
 }
 .Third{
 
@@ -33,5 +35,13 @@
 }
 
 .Earn{
+    /*border: 2px solid green;*/
     width: 40%;
+
+}
+
+.divImg{
+    display: grid;
+    align-content: center;
+    justify-items: center;
 }

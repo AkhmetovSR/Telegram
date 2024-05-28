@@ -14,7 +14,7 @@ const Writer = () => {
     );
     return (
         <div className={"Writer"}>
-            <span className="HelloText">{text}<Cursor cursorStyle="|"/></span>
+            <span className="HelloText">...\\{text}<Cursor cursorStyle="_"/></span>
         </div>
     )
 }

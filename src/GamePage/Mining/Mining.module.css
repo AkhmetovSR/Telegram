@@ -1,0 +1,39 @@
+.Mining{
+    background-color: #1f1f1f;
+    border-radius: 15px;
+    opacity: 80%;
+    height: 30%;
+    width: 70vw;
+    /*border: 2px solid greenyellow;*/
+    position: absolute;
+    top: 40vh;
+    left: 15vw;
+    color: white;
+    display: grid;
+    grid-template-rows: 70% 30%;
+    padding: 5%;
+}
+
+.Mine{
+    /*border: 2px solid greenyellow;*/
+    color: #00FF00FF;
+    font-weight: bolder;
+    font-size: 10vh;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.MineProgress{
+    /*border: 2px solid greenyellow;*/
+    display: grid;
+    align-content: center;
+    justify-items: center;
+}
+
+.Progress{
+    width: 90%;
+    background-color: #7e7e7e;
+    border-radius: 20px;
+    height: 1.5vh;
+}
