@@ -9,7 +9,7 @@ function Options() {
     return (
         <div className={s.Option}>
 
-            <NavLink to="/" className={s.First}>
+            <NavLink to="/Earn" className={s.First}>
                 <div className={s.divImg}><img className={s.Earn} src={Eran} alt="mix"/></div>
                 <div>Earn</div>
             </NavLink>
@@ -19,10 +19,10 @@ function Options() {
                 <div>invite</div>
             </NavLink>
 
-            <div className={s.Third}>
+            <NavLink to="/Boost" className={s.Third}>
                 <div className={s.divImg}><img className={s.Earn} src={Boost} alt="mix"/></div>
                 <div>Boost</div>
-            </div>
+            </NavLink>
 
             <div className={s.Fourth}>
                 <div className={s.divImg}><img className={s.Earn} src={Airdrop} alt="mix"/></div>

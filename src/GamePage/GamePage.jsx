@@ -10,7 +10,7 @@ const tg = window.Telegram.WebApp;
 //     document.getElementById("matrix").style.display = "block";
 // };
 
-function Maining() {
+function GamePage() {
     return (
         <div className={s.GamePage}>
             <Matrix/>
@@ -19,9 +19,8 @@ function Maining() {
                 <Mining/>
                 <Options/>
             </div>
-
         </div>
     );
 }
 
-export default Maining;
+export default GamePage;
