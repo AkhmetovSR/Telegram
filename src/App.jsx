@@ -5,10 +5,21 @@ import StartPage from "./StartPage/StartPage.jsx";
 import Earn from "./GamePage/Earn/Earn.jsx";
 import Invite from "./GamePage/Invite/Invite.jsx";
 import Boost from "./GamePage/Boost/Boost.jsx";
+import Options from "./GamePage/Options/Options";
 
 const tg = window.Telegram.WebApp;
 window.Telegram.WebApp.ready();
 window.Telegram.WebApp.expand();
+
+// alert(screenSize)
+// Подумать как сделать загрузку только через телеграм.
+window.addEventListener('load', () => {
+    let screenSize = window.innerWidth;
+    if(screenSize > 429){
+        alert(navigator.userAgent)
+        // closeApp()
+    }
+})
 
 function closeApp() {
     tg.close();
@@ -25,6 +36,7 @@ function App() {
                     <Route path="/invite" element={<Invite/>}/>
                     <Route path="/boost" element={<Boost/>}/>
                 </Routes>
+                <Options/>
                 {/*<div className={"BtnDiv"}><button className={"Btn"} onClick={closeApp}>Закрыть</button></div>*/}
             </div>
         </BrowserRouter>

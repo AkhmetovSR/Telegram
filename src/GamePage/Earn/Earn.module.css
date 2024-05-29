@@ -9,8 +9,120 @@
     padding: 2%;
     align-content: end;
     justify-items: center;
+}
+
+.Title{
+    position: absolute;
+    color: green;
+    font-size: 6vh;
+    font-weight: bolder;
+    left: 40vw;
+    top: 10vh;
+}
+
+.Earns{
+    /*border: 2px solid green;*/
+    width: 80vw;
+    height: 70vh;
+    display: grid;
+    grid-template-rows: auto;
+    position: absolute;
+    bottom: 6vh;
+}
+
+.Task{
+    /*border: 1px solid red;*/
+    /*position: absolute;*/
+    bottom: 0;
+    background-color: #1f1f1f;
+    border-radius: 15px;
+    opacity: 80%;
+    display: grid;
+    grid-template-columns: 20% 55% 25%;
+    margin: 1vw;
+}
+
+.DivImgTask{
+    /*border: 1px solid red;*/
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+.ImgTask{
+    /*border: 1px solid blue;*/
+    width: 8vw;
+}
+
+.ImgCoin{
+    /*border: 1px solid blue;*/
+    /*width: 100%;*/
+}
+
+.BodyEran{
+    /*border: 1px solid red;*/
+    display: grid;
+    align-content: center;
+}
+.TaskText{
+    /*border: 1px solid red;*/
+    /*border: 1px solid blue;*/
+    padding: 8px;
+    font-size: 3.5vw;
+}
+.CoinQuantity{
+    display: grid;
+    grid-template-columns: 13% 85%;
+}
+.divCoin{
+    padding: 8%;
+    display: grid;
+    align-content: end;
+    /*border: 1px solid red;*/
+}
+.divUpCoin{
+    color: #FFA800;
+    font-size: 4vw;
+    font-weight: bolder;
+    /*border: 1px solid red;*/
+}
+.divBtnClaim{
+    display: grid;
+    align-content: end;
+    justify-items: center;
+    /*border: 1px solid red;*/
+    padding-bottom: 3vw;
+}
+.BtnClaim{
+    /*background-color: green;*/
+    font-size: 2vh;
+    font-weight: bold;
+    width: 80%;
+    height: 3.5vh;
+    border-radius: 30px;
+    opacity: 80%;
+
+    background: #54bc3e;
+    background: -moz-linear-gradient(top,  #54bc3e 0%, #aee850 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#54bc3e), color-stop(100%,#aee850));
+    background: -webkit-linear-gradient(top,  #54bc3e 0%,#aee850 100%);
+    background: -o-linear-gradient(top,  #54bc3e 0%,#aee850 100%);
+    background: -ms-linear-gradient(top,  #54bc3e 0%,#aee850 100%);
+    background: linear-gradient(to bottom,  #54bc3e 0%,#aee850 100%);
 
 }
+.BtnClaim:before{
+
+}
+
+
+
+
+
+
+
+
+
+
 
 .NavBack{
     /*border: 2px solid greenyellow;*/
@@ -28,34 +140,4 @@
     border-radius: 20px;
     /*left: 10px;*/
     /*top: 10px;*/
-}
-
-.Title{
-    position: absolute;
-    color: green;
-    font-size: 34px;
-    font-weight: bolder;
-    left: 40vw;
-    top: 10vh;
-}
-
-.Earns{
-    border: 2px solid green;
-    width: 80vw;
-    height: 75vh;
-    display: grid;
-    grid-template-rows: auto;
-}
-
-.Task{
-    /*position: absolute;*/
-    bottom: 0;
-}
-
-.ImgTask{
-    width: 20px;
-}
-
-.ImgCoin{
-    width: 20px;
 }
