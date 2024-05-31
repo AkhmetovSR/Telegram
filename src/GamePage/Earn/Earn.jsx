@@ -36,7 +36,7 @@ function Earn() {
 
     return (
         <div className={s.Earn}>
-            <NavLink to="/Matrix" className={s.NavBack}><img src={Go_back} alt={"goBack"}
+            <NavLink to="/app1/GamePage" className={s.NavBack}><img src={Go_back} alt={"goBack"}
                                                              className={s.Goback}/></NavLink>
             <div className={s.Title}>Earn</div>
             <div className={s.Earns}>{listEarn}</div>

@@ -14,7 +14,7 @@ body {
     color: white;
     /*background-size: 90vw;*/
     background-color: black;
-    background-image: url("../resource/mask.png");
+    /*background-image: url("../resource/mask.png");*/
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
@@ -26,7 +26,13 @@ body {
 
 
 }
-
+.btn{
+    background-color: #54bc3e;
+    width: 20vw;
+    position: absolute;
+    top: 10vh;
+    left: 40vw;
+}
 
 
 .StartMining {

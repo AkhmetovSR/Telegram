@@ -3,23 +3,23 @@
     border-radius: 15px;
     opacity: 80%;
     width: 80vw;
-    height: 12vh;
+    height: 18vw;
     position: absolute;
-    bottom: 10vh;
+    bottom: 6vh;
     left: 10vw;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-content: center;
     justify-content: center;
     -webkit-user-drag: none;
+    padding: 2vw;
 }
 
-.First, .Second, .Third{
+.First, .Second, .Third, .Home{
     text-align: center;
-    color: white;
     align-self: center;
     height: 90%;
-    border-right: 2px solid #b4b4b4;
+    border-right: 1px solid #7e7e7e;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -58,4 +58,7 @@
 }
 .Text{
     user-select: none;
+    font-size: 3.5vw;
+    color: #FFA800;
+    padding: 1vw;
 }

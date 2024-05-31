@@ -6,8 +6,6 @@
     position: absolute;
     color: white;
     display: grid;
-    padding: 2%;
-    align-content: end;
     justify-items: center;
 }
 
@@ -17,17 +15,18 @@
     font-size: 6vh;
     font-weight: bolder;
     left: 40vw;
-    top: 10vh;
+    top: 2vh;
 }
 
 .Earns{
     /*border: 2px solid green;*/
     width: 80vw;
-    height: 70vh;
+    height: 65vh;
     display: grid;
     grid-template-rows: auto;
     position: absolute;
-    bottom: 6vh;
+    top: 14vh;
+    overflow: auto;
 }
 
 .Task{

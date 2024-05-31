@@ -1,82 +1,82 @@
-.Main{
-    background: #090909;
-            /*radial-gradient(circle, rgba(2,0,36,1) 10%, rgb(0, 40, 199) 20%, rgb(0, 0, 0) 50%);*/
-    display: grid;
-    grid-template-rows: auto;
-    /*align-content: center;*/
-    justify-items: center;
-    width: 100vw;
-    height: 100vh;
-    max-height: calc(var(--tg-viewport-height, 100%) - 4px);
+/*.Main{*/
+/*    background: #090909;*/
+/*            !*radial-gradient(circle, rgba(2,0,36,1) 10%, rgb(0, 40, 199) 20%, rgb(0, 0, 0) 50%);*!*/
+/*    display: grid;*/
+/*    grid-template-rows: auto;*/
+/*    !*align-content: center;*!*/
+/*    justify-items: center;*/
+/*    width: 100vw;*/
+/*    height: 100vh;*/
+/*    max-height: calc(var(--tg-viewport-height, 100%) - 4px);*/
 
-}
-.userName{
-    color: white;
-}
-
-.divImg{
-    /*border: 1px solid red;*/
-    /*background: radial-gradient(circle, rgba(2,0,36,1) 90%, rgb(0, 40, 199) 20%, rgb(0, 0, 0) 10%);*/
-}
-
-.ImgDiv{
-    width: 70%;
-}
-.Img{
-    width: 100%;
-}
-
-.BtnDiv{
-    width: 90%;
-}
-.Btn{
-    width: 100%;
-    color: red;
-}
-
-
-/*.App {*/
-/*  text-align: center;*/
+/*}*/
+/*.userName{*/
+/*    color: white;*/
 /*}*/
 
-/*.App-logo {*/
-/*  height: 40vmin;*/
-/*  pointer-events: none;*/
+/*.divImg{*/
+/*    !*border: 1px solid red;*!*/
+/*    !*background: radial-gradient(circle, rgba(2,0,36,1) 90%, rgb(0, 40, 199) 20%, rgb(0, 0, 0) 10%);*!*/
 /*}*/
 
-/*@media (prefers-reduced-motion: no-preference) {*/
-/*  .App-logo {*/
-/*    animation: App-logo-spin infinite 20s linear;*/
-/*  }*/
+/*.ImgDiv{*/
+/*    width: 70%;*/
+/*}*/
+/*.Img{*/
+/*    width: 100%;*/
 /*}*/
 
-/*.App-header {*/
-/*  background-color: #282c34;*/
-/*  min-height: 100vh;*/
-/*  display: flex;*/
-/*  flex-direction: column;*/
-/*  align-items: center;*/
-/*  justify-content: center;*/
-/*  font-size: calc(10px + 2vmin);*/
-/*  color: white;*/
+/*.BtnDiv{*/
+/*    width: 90%;*/
+/*}*/
+/*.Btn{*/
+/*    width: 100%;*/
+/*    color: red;*/
 /*}*/
 
-/*.App-link {*/
-/*  color: #61dafb;*/
-/*}*/
 
-/*@keyframes App-logo-spin {*/
-/*  from {*/
-/*    transform: rotate(0deg);*/
-/*  }*/
-/*  to {*/
-/*    transform: rotate(360deg);*/
-/*  }*/
-/*}*/
+/*!*.App {*!*/
+/*!*  text-align: center;*!*/
+/*!*}*!*/
 
-/*//  "eslintConfig": {*/
-/*                  //    "extends": [*/
-/*                  //      "react-app",*/
-/*                  //      "react-app/jest"*/
-/*                  //    ]*/
-/*                  //  },*/
+/*!*.App-logo {*!*/
+/*!*  height: 40vmin;*!*/
+/*!*  pointer-events: none;*!*/
+/*!*}*!*/
+
+/*!*@media (prefers-reduced-motion: no-preference) {*!*/
+/*!*  .App-logo {*!*/
+/*!*    animation: App-logo-spin infinite 20s linear;*!*/
+/*!*  }*!*/
+/*!*}*!*/
+
+/*!*.App-header {*!*/
+/*!*  background-color: #282c34;*!*/
+/*!*  min-height: 100vh;*!*/
+/*!*  display: flex;*!*/
+/*!*  flex-direction: column;*!*/
+/*!*  align-items: center;*!*/
+/*!*  justify-content: center;*!*/
+/*!*  font-size: calc(10px + 2vmin);*!*/
+/*!*  color: white;*!*/
+/*!*}*!*/
+
+/*!*.App-link {*!*/
+/*!*  color: #61dafb;*!*/
+/*!*}*!*/
+
+/*!*@keyframes App-logo-spin {*!*/
+/*!*  from {*!*/
+/*!*    transform: rotate(0deg);*!*/
+/*!*  }*!*/
+/*!*  to {*!*/
+/*!*    transform: rotate(360deg);*!*/
+/*!*  }*!*/
+/*!*}*!*/
+
+/*//  "eslintConfig": {*!*!*/
+/*!*                  //    "extends": [*!*/
+/*!*                  //      "react-app",*!*/
+/*!*                  //      "react-app/jest"*!*/
+/*!*                  //    ]*!*/
+/*!*                  //  },*!*/
