@@ -6,7 +6,6 @@ import {NavLink} from "react-router-dom";
 function Invite() {
     return (
         <div className={s.Invite}>
-            <NavLink to="/Matrix" className={s.NavBack}><img src={Go_back} className={s.GoBack} alt={"goBack"}/></NavLink>
             <div className={s.Title}>Frens</div>
             <div className={s.DivLinkInvite}>
                 <div className={s.TitleInvite}>Your invite link</div>

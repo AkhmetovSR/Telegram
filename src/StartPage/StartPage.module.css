@@ -12,9 +12,9 @@ body {
 
 .StartPage {
     color: white;
-    /*background-size: 90vw;*/
+    background-size: 90vw;
     background-color: black;
-    /*background-image: url("../resource/mask.png");*/
+    background-image: url("../resource/mask.png");
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;

@@ -1,4 +1,3 @@
-
 import {useEffect, useRef} from "react";
 import s from "./Matrix.module.css"
 
@@ -10,8 +9,8 @@ const Matrix = () => {
             const ctx = canvas.getContext("2d")
             let width = (canvas.width = window.innerWidth)
             let height = (canvas.height = window.innerHeight)
-            let columns = Math.floor(width / 20)
-            const characters = "qwertyuiop[]';lkjhgfdsaazxcvbnm,./"
+            let columns = Math.floor(width) //!!!!!!!!!!!!!!! /20
+            const characters = "qwertyuiop[]';lkjhgfdsaazxcvbnm,./1234567890"
             const charArray = characters.split("")
             let drops = [];
 

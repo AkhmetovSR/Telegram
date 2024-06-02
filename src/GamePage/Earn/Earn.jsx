@@ -1,13 +1,28 @@
 import s from "./Earn.module.css"
-import Go_back from "../../resource/goback.png"
-import {NavLink} from "react-router-dom";
 import Earn1 from "../../resource/earn1.png"
 import GreenCoin from "../../resource/greenCoin.png"
 import Rocket from "../../resource/rocket.png"
 import BoxPresent from "../../resource/boxPresent.png"
 import Firework from "../../resource/Firework.png"
 import Present2 from "../../resource/present2.png"
-import StartPage from "../../StartPage/StartPage.jsx";
+
+const tg = window.Telegram.WebApp;
+
+function tapEarnClaim(){
+    const myHeaders = new Headers();
+    myHeaders.append("user", "am i");
+
+    const requestOptions = {
+        method: "POST",
+        headers: myHeaders,
+        redirect: "follow"
+    };
+
+    fetch("http://localhost:8888/earn", requestOptions)
+        .then((response) => response.text())
+        .then((result) => console.log(result))
+        .catch((error) => console.error(error));
+}
 
 
 const EarnTask = [
@@ -30,14 +45,12 @@ function Earn() {
                     <div className={s.divUpCoin}>{earn.coins}</div>
                 </div>
             </div>
-            <div className={s.divBtnClaim}><button className={s.BtnClaim}>Claim</button></div>
+            <div className={s.divBtnClaim}><button className={s.BtnClaim} onClick={tapEarnClaim}>Claim</button></div>
         </div>
     ));
 
     return (
         <div className={s.Earn}>
-            <NavLink to="/app1/GamePage" className={s.NavBack}><img src={Go_back} alt={"goBack"}
-                                                             className={s.Goback}/></NavLink>
             <div className={s.Title}>Earn</div>
             <div className={s.Earns}>{listEarn}</div>
         </div>);

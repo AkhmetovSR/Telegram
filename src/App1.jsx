@@ -1,6 +1,5 @@
-import s from "./App1.module.css"
-import {BrowserRouter, Route, Routes} from "react-router-dom";
-import GamePage from "./GamePage/GamePage.jsx";
+import {Route, Routes} from "react-router-dom";
+import GamePage from "./GamePage/GamePage";
 import Earn from "./GamePage/Earn/Earn.jsx";
 import Invite from "./GamePage/Invite/Invite";
 import Boost from "./GamePage/Boost/Boost";
@@ -11,14 +10,12 @@ function App1() {
         <>
             <Routes>
                 <Route path="/GamePage" element={<GamePage/>}/>
-                <Route path="/Earn" element={<Earn/>}/>
+                <Route path='/Earn' element={<Earn/>}/>
                 <Route path="/invite" element={<Invite />}/>
                 <Route path="/boost" element={<Boost />}/>
             </Routes>
             <Options/>
         </>
-
-        // {/*<div className={"BtnDiv"}><button className={"Btn"} onClick={closeApp}>Закрыть</button></div>*/}
     );
 }
 

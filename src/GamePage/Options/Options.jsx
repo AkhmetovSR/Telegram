@@ -5,7 +5,6 @@ import Boost from '../../resource/Boost.png'
 import Airdrop from '../../resource/Airdrop.png'
 import Home from '../../resource/home.png'
 import {NavLink} from "react-router-dom";
-import o from "./Options.module.css";
 
 
 // window.addEventListener("DOMContentLoaded", () => {
@@ -41,7 +40,7 @@ function Options() {
             </NavLink>
 
             <div className={s.Fourth}>
-                <div className={s.divImg} onClick={go}><img className={s.Earn} src={Airdrop} alt="mix"/></div>
+                <div className={s.divImg}><img className={s.Earn} src={Airdrop} alt="mix"/></div>
                 <div className={s.Text}>Airdrop</div>
             </div>
 

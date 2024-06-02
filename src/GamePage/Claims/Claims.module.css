@@ -19,6 +19,8 @@
     align-content: center;
     justify-content: center;
     user-select: none;
+    font-weight: bold;
+    color: #FFA800;
 }
 .CoinClaim{
     /*border: 2px solid greenyellow;*/
