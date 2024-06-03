@@ -4,7 +4,11 @@ import "../resource/mask.png"
 import Writer from "./Writer.jsx";
 import {NavLink} from "react-router-dom";
 
-const tg = window.Telegram.WebApp;
+// const tg = window.Telegram.WebApp;
+
+function con(userName){
+
+}
 
 // tg.getPaymentForm.
 // function closeOption(){
@@ -27,7 +31,7 @@ const tg = window.Telegram.WebApp;
 //         .catch((error) => console.error(error));
 // }
 
-function StartPage() {
+function StartPage({userName}) {
     return (
         <div className={s.StartPage}>
             <div className={s.Black}>
