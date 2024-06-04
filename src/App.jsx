@@ -6,31 +6,24 @@ import App1 from "./App1";
 const tg = window.Telegram.WebApp;
 window.Telegram.WebApp.ready();
 window.Telegram.WebApp.expand();
-const tgUserName = tg.initDataUnsafe?.user?.username
 
-let userName = "";
-let claim = 0;
-let refLink = "";
-let startTime = Date;
+//----------------При загрузке страницы отправляется POST запрос c tgUserName в Header, на сервер для, получения данных пользователя.-------------------------------------------
 
-const myHeaders = new Headers();
-myHeaders.append("userName", tgUserName);
-const requestOptions = {
-    method: "POST",
-    headers: myHeaders,
-    // redirect: "follow"
-};
+// 1. Получаем tgUserName из тг бота
+let login = tg.initDataUnsafe?.user?.username;
 
-fetch("https://localhost:8888/getAllInfo", requestOptions)
-    .then((response) => {
-        userName = response.header("userName");
-        claim = response.header("claim");
-        refLink = response.header("refLink");
-        // startTime = response.header("startTime");
-        console.log(userName, claim, refLink, startTime);
-    })
-    .then((result) => console.log(result))
-    .catch((error) => console.error(error));
+// 2. Если имя пользователя не пустое
+if(login !== null || login !== ""){
+    const reqParam = {
+        method: "POST",
+        headers: {'login': 'AhSR26'}
+    }
+    fetch("http://localhost:8888/getUser", reqParam)
+        .then((response) => {console.log(response.getHeaders("login"))})
+        .then((result) => console.log(result))
+        .catch((error) => console.error(error));
+}
+
 
 // Подумать как сделать загрузку только через телеграм.
 
@@ -49,9 +42,33 @@ function App() {
     );
 }
 
-export default App;
+export default App; //($env:HTTPS = "true") -and (npm start)
 
-{/*<div className={"BtnDiv"}><button className={"Btn"} onClick={closeApp}>Закрыть</button></div>*/
-}
 
-//($env:HTTPS = "true") -and (npm start)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let myHeaders = new Headers(); // Создаем новый Header
+// myHeaders.append("userName", tgUserName); // Добавляем tgUserName в Header, чтобы отправить в запросе
+// myHeaders.append("userName", tgUserName);
+// const requestOptions = {
+//     method: "POST",
+//     headers: myHeaders,
+//     // redirect: "follow"
+// };
+{/*<div className={"BtnDiv"}><button className={"Btn"} onClick={closeApp}>Закрыть</button></div>*/}
+
+

@@ -6,23 +6,23 @@ import BoxPresent from "../../resource/boxPresent.png"
 import Firework from "../../resource/Firework.png"
 import Present2 from "../../resource/present2.png"
 
-const tg = window.Telegram.WebApp;
+// const tg = window.Telegram.WebApp;
 
-function tapEarnClaim(){
-    const myHeaders = new Headers();
-    myHeaders.append("user", "am i");
-
-    const requestOptions = {
-        method: "POST",
-        headers: myHeaders,
-        redirect: "follow"
-    };
-
-    fetch("http://localhost:8888/earn", requestOptions)
-        .then((response) => response.text())
-        .then((result) => console.log(result))
-        .catch((error) => console.error(error));
-}
+// function tapEarnClaim(){
+//     const myHeaders = new Headers();
+//     myHeaders.append("user", "am i");
+//
+//     const requestOptions = {
+//         method: "POST",
+//         headers: myHeaders,
+//         redirect: "follow"
+//     };
+//
+//     fetch("http://localhost:8888/earn", requestOptions)
+//         .then((response) => response.text())
+//         .then((result) => console.log(result))
+//         .catch((error) => console.error(error));
+// }
 
 
 const EarnTask = [
@@ -45,7 +45,7 @@ function Earn() {
                     <div className={s.divUpCoin}>{earn.coins}</div>
                 </div>
             </div>
-            <div className={s.divBtnClaim}><button className={s.BtnClaim} onClick={tapEarnClaim}>Claim</button></div>
+            <div className={s.divBtnClaim}><button className={s.BtnClaim}>Claim</button></div>
         </div>
     ));
 
@@ -55,6 +55,5 @@ function Earn() {
             <div className={s.Earns}>{listEarn}</div>
         </div>);
 }
-
 
 export default Earn;

@@ -6,10 +6,6 @@ import Options from "./Options/Options.jsx";
 
 const tg = window.Telegram.WebApp;
 
-// function viewDiv(){
-//     document.getElementById("matrix").style.display = "block";
-// };
-
 function GamePage() {
     return (
         <div className={s.GamePage}>
