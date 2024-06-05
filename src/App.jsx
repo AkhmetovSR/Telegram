@@ -19,7 +19,7 @@ const reqParam = {
 async function getData() {
     const obj = await fetch("http://localhost:8888/", reqParam);
     const result = await obj.json();
-    return(result[0].claim)
+    return(result[0].claims)
 }
 
 let res = await getData();
@@ -34,8 +34,8 @@ function App() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<StartPage/>}/>
-                <Route path='app1/*' element={<App1/>}/>
+                <Route path="/" element={<StartPage />}/>
+                <Route path='app1/*' element={<App1 claims={res}/>}/>
             </Routes>
         </BrowserRouter>
     );

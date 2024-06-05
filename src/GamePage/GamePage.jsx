@@ -6,12 +6,12 @@ import Options from "./Options/Options.jsx";
 
 const tg = window.Telegram.WebApp;
 
-function GamePage() {
+function GamePage(props) {
     return (
         <div className={s.GamePage}>
             <Matrix/>
             <div className={s.Content}>
-                <Claims/>
+                <Claims claims={props.claims}/>
                 <Mining/>
                 <Options/>
             </div>

@@ -3,7 +3,7 @@ import "../resource/mask.png"
 import Writer from "./Writer.jsx";
 import {NavLink} from "react-router-dom";
 
-function StartPage({userName}) {
+function StartPage(props) {
     return (
         <div className={s.StartPage}>
             <div className={s.Black}>
