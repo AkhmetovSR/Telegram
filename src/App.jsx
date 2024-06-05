@@ -1,7 +1,7 @@
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import StartPage from "./StartPage/StartPage.jsx";
 import App1 from "./App1";
-
+import async from "async";
 
 const tg = window.Telegram.WebApp;
 window.Telegram.WebApp.ready();
@@ -11,22 +11,21 @@ window.Telegram.WebApp.expand();
 
 // 1. Получаем tgUserName из тг бота
 let login = tg.initDataUnsafe?.user?.username;
-
-// 2. Если имя пользователя не пустое
-if(login !== null || login !== ""){
-    const reqParam = {
-        method: "POST",
-        headers: {'login': 'AhSR26'}
-    }
-    fetch("http://localhost:8888/getUser", reqParam)
-        .then((response) => {console.log(response.getHeaders("login"))})
-        .then((result) => console.log(result))
-        .catch((error) => console.error(error));
+const reqParam = {
+    method: "POST",
+    headers: {'login': 'AhSR26'}
 }
 
+async function getData() {
+    const obj = await fetch("http://localhost:8888/", reqParam);
+    const result = await obj.json();
+    return(result[0].claim)
+}
 
-// Подумать как сделать загрузку только через телеграм.
+let res = await getData();
+console.log(res);
 
+//сделать загрузку только через телеграм.
 function closeApp() {
     tg.close();
 }
@@ -43,32 +42,3 @@ function App() {
 }
 
 export default App; //($env:HTTPS = "true") -and (npm start)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let myHeaders = new Headers(); // Создаем новый Header
-// myHeaders.append("userName", tgUserName); // Добавляем tgUserName в Header, чтобы отправить в запросе
-// myHeaders.append("userName", tgUserName);
-// const requestOptions = {
-//     method: "POST",
-//     headers: myHeaders,
-//     // redirect: "follow"
-// };
-{/*<div className={"BtnDiv"}><button className={"Btn"} onClick={closeApp}>Закрыть</button></div>*/}
-
-
