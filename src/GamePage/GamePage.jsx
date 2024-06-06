@@ -4,14 +4,12 @@ import Claims from "./Claims/Claims.jsx";
 import Mining from "./Mining/Mining.jsx";
 import Options from "./Options/Options.jsx";
 
-const tg = window.Telegram.WebApp;
-
 function GamePage() {
     return (
         <div className={s.GamePage}>
             <Matrix/>
             <div className={s.Content}>
-                <Claims/>
+                <Claims />
                 <Mining/>
                 <Options/>
             </div>
