@@ -6,15 +6,7 @@ import Airdrop from '../../resource/Airdrop.png'
 import Home from '../../resource/home.png'
 import {NavLink} from "react-router-dom";
 
-
-// window.addEventListener("DOMContentLoaded", () => {
-//     if (window.location == "https://192.168.1.106:3000/") {
-//         alert(document.getElementById("option"))
-//         document.getElementById("option").setAttribute('display', 'none')
-//     }
-// })
 const tg = window.Telegram.WebApp;
-
 
 function Options() {
     return (
@@ -43,7 +35,6 @@ function Options() {
                 <div className={s.divImg}><img className={s.Earn} src={Airdrop} alt="mix"/></div>
                 <div className={s.Text}>Airdrop</div>
             </div>
-
         </div>
     );
 }

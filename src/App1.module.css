@@ -1,0 +1,64 @@
+.Option{
+    background-color: #1f1f1f;
+    border-radius: 15px;
+    opacity: 80%;
+    width: 80vw;
+    height: 18vw;
+    position: absolute;
+    bottom: 6vh;
+    left: 10vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+    -webkit-user-drag: none;
+    padding: 2vw;
+}
+
+.First, .Second, .Third, .Home{
+    text-align: center;
+    align-self: center;
+    height: 90%;
+    border-right: 1px solid #7e7e7e;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+
+}
+.Second{
+    /*border: 2px solid green;*/
+}
+.Third{
+
+}
+.Fourth{
+    text-align: center;
+    color: white;
+    align-self: center;
+    height: 90%;
+}
+
+.Earn{
+    /*border: 2px solid green;*/
+    width: 40%;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+
+}
+
+.divImg{
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+}
+.Text{
+    user-select: none;
+    font-size: 3.5vw;
+    color: #FFA800;
+    padding: 1vw;
+}
