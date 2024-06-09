@@ -5,11 +5,11 @@ import Invite from "./GamePage/Invite/Invite";
 import Boost from "./GamePage/Boost/Boost";
 import Options from "./GamePage/Options/Options";
 
-function App1(props) {
+function App1() {
     return (
         <>
             <Routes>
-                <Route path="/GamePage" element={<GamePage claims={props.claims}/>}/>
+                <Route path="/GamePage" element={<GamePage/>}/>
                 <Route path='/Earn' element={<Earn/>}/>
                 <Route path="/invite" element={<Invite />}/>
                 <Route path="/boost" element={<Boost />}/>

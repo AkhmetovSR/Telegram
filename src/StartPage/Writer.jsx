@@ -4,7 +4,8 @@ import "./Writer.css"
 
 const tg = window.Telegram.WebApp;
 const userName = tg.initDataUnsafe?.user?.username;
-const Writer = () => {
+
+function Writer () {
     const [text] = useTypewriter({
             words: ['Hello, ' + userName + '!', 'How are you?', 'Click "StartMining"'],
             loop: 1,

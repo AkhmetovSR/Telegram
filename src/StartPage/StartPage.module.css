@@ -23,8 +23,6 @@ body {
     width: 100vw;
     /*display: grid;*/
     /*position: absolute;*/
-
-
 }
 .btn{
     background-color: #54bc3e;
@@ -34,7 +32,12 @@ body {
     left: 40vw;
 }
 
-
+.Congrats{
+    color: #ececec;
+    border: 5px solid red;
+    text-align: center;
+    display: grid;
+}
 .StartMining {
     /*border: 1px solid red;*/
     position: absolute;
