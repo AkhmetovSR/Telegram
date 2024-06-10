@@ -4,12 +4,15 @@ import Claims from "./Claims/Claims.jsx";
 import Mining from "./Mining/Mining.jsx";
 import Options from "./Options/Options.jsx";
 
-function GamePage() {
+const tg = window.Telegram.WebApp;
+let login = tg.initDataUnsafe?.user?.username;
+
+function GamePage(props) {
     return (
         <div className={s.GamePage}>
             <Matrix/>
             <div className={s.Content}>
-                <Claims />
+                <Claims data={props.data[0]}/>
                 <Mining/>
                 <Options/>
             </div>

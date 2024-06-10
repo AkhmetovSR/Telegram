@@ -7,11 +7,11 @@ import Firework from "../../resource/Firework.png"
 import Present2 from "../../resource/present2.png"
 
 const EarnTask = [
-    {id:1, im: Earn1, TaskText: 'Subscribe to channel', coinImg: GreenCoin, coins: '+1 500'},
-    {id:2, im: Rocket, TaskText: 'Upgrade mining speed', coinImg: GreenCoin, coins: '+1 500'},
-    {id:3, im: BoxPresent, TaskText: 'Invite 1 a frens', coinImg: GreenCoin, coins: '+1 500'},
-    {id:4, im: Firework, TaskText: 'Subscribe to channel', coinImg: GreenCoin, coins: '+1 500'},
-    {id:5, im: Present2, TaskText: 'Invite 3 frens', coinImg: GreenCoin, coins: '+1 500'}
+    {id:1, im: Earn1, TaskText: 'Subscribe to channel', coinImg: GreenCoin, coins: '+1 500', btn: "btn1"},
+    {id:2, im: Rocket, TaskText: 'Upgrade mining speed', coinImg: GreenCoin, coins: '+1 500', btn: "btn2"},
+    {id:3, im: BoxPresent, TaskText: 'Invite 1 a frens', coinImg: GreenCoin, coins: '+1 500', btn: "btn3"},
+    {id:4, im: Firework, TaskText: 'Subscribe to channel', coinImg: GreenCoin, coins: '+1 500', btn: "btn4"},
+    {id:5, im: Present2, TaskText: 'Invite 3 frens', coinImg: GreenCoin, coins: '+1 500', btn: "btn5"}
 ]
 
 function Earn() {
@@ -26,7 +26,7 @@ function Earn() {
                     <div className={s.divUpCoin}>{earn.coins}</div>
                 </div>
             </div>
-            <div className={s.divBtnClaim}><button className={s.BtnClaim}>Claim</button></div>
+            <div className={s.divBtnClaim}><button key={EarnTask.id} className={s.BtnClaim}>Claim</button></div>
         </div>
     ));
 
