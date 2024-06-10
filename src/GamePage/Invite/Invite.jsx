@@ -3,13 +3,14 @@ import Go_back from "../../resource/goback.png"
 import {NavLink} from "react-router-dom";
 
 
-function Invite() {
+function Invite(props) {
+    const refLink = props?.refLink[0]?.refLink
     return (
         <div className={s.Invite}>
             <div className={s.Title}>Frens</div>
             <div className={s.DivLinkInvite}>
                 <div className={s.TitleInvite}>Your invite link</div>
-                <div className={s.Link}>https://www.freepik.com/search?format=search&last_filter=page&last_value=4&page=4&query=presents+3d&type=icon#uuid=5599643f-9aa3-4704-922c-ff1cf9373482" className={s.Input}</div>
+                <div className={s.Link}>{refLink}</div>
                 <div className={s.TwoBtns}>
                     <div className={s.divBtnCopyLink}><button className={s.BtnCopyLink}>Copy Link</button></div>
                     <div className={s.divShare}><button className={s.BtnShare}>Share</button></div>

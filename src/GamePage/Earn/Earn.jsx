@@ -14,8 +14,7 @@ const EarnTask = [
     {id:5, im: Present2, TaskText: 'Invite 3 frens', coinImg: GreenCoin, coins: '+1 500', btn: "btn5"}
 ]
 
-function Earn() {
-
+function Earn(props) {
     const listEarn = EarnTask.map((earn) => (
         <div className={s.Task}>
             <div className={s.DivImgTask}><img src={earn.im} className={s.ImgTask} alt="a"/></div>

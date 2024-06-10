@@ -9,9 +9,9 @@ function App1(props) {
     return (
         <>
             <Routes>
-                <Route path="/GamePage" element={<GamePage data={props.data} login={props.login}/>}/>
-                <Route path='/Earn' element={<Earn/>}/>
-                <Route path="/invite" element={<Invite />}/>
+                <Route path="/GamePage" element={<GamePage data={props.data} login={props.login} newOrOldUser={props.newOrOldUser}/>}/>
+                <Route path='/Earn' element={<Earn />}/>
+                <Route path="/invite" element={<Invite refLink={props.refLink}/>}/>
                 <Route path="/boost" element={<Boost />}/>
             </Routes>
             <Options/>

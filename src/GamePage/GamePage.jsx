@@ -3,16 +3,20 @@ import Matrix from "./Matrix/Matrix.jsx";
 import Claims from "./Claims/Claims.jsx";
 import Mining from "./Mining/Mining.jsx";
 import Options from "./Options/Options.jsx";
+import {useInView} from "framer-motion";
+import {useEffect, useRef} from "react";
 
 const tg = window.Telegram.WebApp;
 let login = tg.initDataUnsafe?.user?.username;
+login = "AhSR28"
 
 function GamePage(props) {
+
     return (
         <div className={s.GamePage}>
             <Matrix/>
             <div className={s.Content}>
-                <Claims data={props.data[0]}/>
+                <Claims data={props.data} login={props.login} newOrOldUser={props.newOrOldUser}/>
                 <Mining/>
                 <Options/>
             </div>
