@@ -9,31 +9,34 @@ function StartPage(props) {
     const claims = props?.data?.claims;
     let profit = props?.data?.profit;
     const id = props?.data?.id;
+    let referal = props?.referal;
+    // referal = "AhSR25"
     let congrats = null;
+    // console.log(referal)
+    // console.log(user)
 
-    if (user === "old") congrats =
-        <div className={s.Congrats}>Congrats!<br/>Your profit +{props.data.profit} coins</div>;
+    if (user === "old") congrats = <div className={s.Congrats}>Congrats!<br/>Your profit +{props.data.profit} coins</div>;
     let seconds = Math.floor(Date.now() / 1000);
     const startTimes = props?.data?.startTimes;                                                                  // Время прошлого старта майнинга
     const mineTime = props?.data?.mineTime;                                                                      // Время майнинга
-    let time = seconds - startTimes;                                                                    // Сколько времени майнинга прошло
+    let time = seconds - startTimes;                                                                             // Сколько времени майнинга прошло
 
     async function startMining() {
-        login = "AhSR20"
+        login = "AhSR26"
         const reqStart = {
             method: "POST",
-            headers: {'login': login, 'profit': profit, 'id': id, "claims": claims}
+            headers: {'login': login, 'profit': profit, 'id': id, "claims": claims, "referal": referal}
         }
 
         if (user === "new") {                                                                                    // Если пользователь новый, при нажатии на кнопку StartMining отправляется POST запрос на добавление пользователя в БД
-            console.log("new fetch")
+            // console.log("new fetch")
             await fetch("http://localhost:8888/addNewUserAndStartMining", reqStart)
                 .then(r => console.log(r))
             props.func()
         }
 
         if (user === "old" && time > mineTime) {                                                                  // Если пользователь старый, отправляется запрос на добавление profit в claims
-            console.log("old fetch")
+            // console.log("old fetch")
             await fetch("http://localhost:8888/claimProfit", reqStart)
                 .then(r => console.log(r))
             {props.func()}                                                                                        // callback-функция

@@ -7,6 +7,10 @@
     color: white;
     display: grid;
     padding: 2%;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
 }
 
 .Title{
@@ -58,14 +62,14 @@
     white-space: nowrap;
 }
 
-.TwoBtns{
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 1fr 1fr;
-    /*border: 1px solid red;*/
-    width: 70vw;
-    padding: 3.4vw;
-}
+/*.TwoBtns{*/
+/*    display: grid;*/
+/*    justify-items: center;*/
+/*    !*grid-template-columns: auto;*!*/
+/*    border: 1px solid red;*/
+/*    width: 70vw;*/
+/*    padding: 3.4vw;*/
+/*}*/
 .divBtnCopyLink, .divShare{
     /*border: 1px solid red;*/
     width: 95%;
@@ -88,4 +92,13 @@
     top: 42vh;
     left: 10vw;
     padding: 3vw;
+}
+.BtnShare {
+    border-radius: 5px;
+    width: 100%;
+    background-color: grey;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
 }

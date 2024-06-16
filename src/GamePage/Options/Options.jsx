@@ -1,6 +1,6 @@
 import s from "./Options.module.css"
 import Eran from "../../resource/Earn.png";
-import Invite from '../../resource/Invite.png'
+import Frens from '../../resource/frens.png'
 import Boost from '../../resource/Boost.png'
 import Airdrop from '../../resource/Airdrop.png'
 import Home from '../../resource/home.png'
@@ -22,8 +22,8 @@ function Options() {
             </NavLink>
 
             <NavLink to="/app1/invite" className={s.Second}>
-                <div className={s.divImg}><img className={s.Earn} src={Invite} alt="mix"/></div>
-                <div className={s.Text}>invite</div>
+                <div className={s.divImg}><img className={s.Earn} src={Frens} alt="mix"/></div>
+                <div className={s.Text}>Frens</div>
             </NavLink>
 
             <NavLink to="/app1/Boost" className={s.Third}>

@@ -1,7 +1,7 @@
 .Earn {
     background-color: black;
-    height: 99.5vh;
-    width: 99.5vw;
+    height: 100vh;
+    width: 100vw;
     /*border: 2px solid greenyellow;*/
     position: absolute;
     color: white;
@@ -14,24 +14,30 @@
     color: green;
     font-size: 6vh;
     font-weight: bolder;
-    left: 40vw;
-    top: 2vh;
+    left: 37vw;
+    top: 25vh;
 }
 
 .Earns{
     /*border: 2px solid green;*/
     width: 80vw;
-    height: 65vh;
+    height:40vh;
     display: grid;
     grid-template-rows: auto;
     position: absolute;
-    top: 14vh;
-    overflow: auto;
+    top: 36vh;
+    overflow: hidden;
+    align-content: start;
+}
+.Earns::-webkit-scrollbar{
+    width: 0;
+    background: transparent;
 }
 
 .Task{
     /*border: 1px solid red;*/
     /*position: absolute;*/
+    height: 12vh;
     bottom: 0;
     background-color: #1f1f1f;
     border-radius: 15px;
@@ -86,35 +92,62 @@
 }
 .divBtnClaim{
     display: grid;
-    align-content: end;
+    align-content: center;
     justify-items: center;
     /*border: 1px solid red;*/
-    padding-bottom: 3vw;
+    /*padding-bottom: 3vw;*/
 }
 .BtnClaim{
-    /*background-color: green;*/
+    background-color: green;
     font-size: 2vh;
     font-weight: bold;
     width: 80%;
     height: 3.5vh;
     border-radius: 30px;
     opacity: 80%;
+    margin: 4px;
 
-    background: #54bc3e;
-    background: -moz-linear-gradient(top,  #54bc3e 0%, #aee850 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#54bc3e), color-stop(100%,#aee850));
-    background: -webkit-linear-gradient(top,  #54bc3e 0%,#aee850 100%);
-    background: -o-linear-gradient(top,  #54bc3e 0%,#aee850 100%);
-    background: -ms-linear-gradient(top,  #54bc3e 0%,#aee850 100%);
-    background: linear-gradient(to bottom,  #54bc3e 0%,#aee850 100%);
+    /*background: #54bc3e;*/
+    /*background: -moz-linear-gradient(top,  #54bc3e 0%, #aee850 100%);*/
+    /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#54bc3e), color-stop(100%,#aee850));*/
+    /*background: -webkit-linear-gradient(top,  #54bc3e 0%,#aee850 100%);*/
+    /*background: -o-linear-gradient(top,  #54bc3e 0%,#aee850 100%);*/
+    /*background: -ms-linear-gradient(top,  #54bc3e 0%,#aee850 100%);*/
+    /*background: linear-gradient(to bottom,  #54bc3e 0%,#aee850 100%);*/
 
 }
 .BtnClaim:before{
 
 }
 
+.GetMoreCoinsImg{
+    position: absolute;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    top: 8vh;
+    left: 35%;
+    width: 18vh;
+    opacity: 80%;
+}
+.textGetMoreCoins{
+    text-align: center;
+    /*border: 1px solid red;*/
+    width: 50vw;
+    font-weight: bold;
+    font-size: 3vh;
+    position: absolute;
+    top: 30vh;
+    left: 25vw;
 
+}
 
+.Soon{
+    color: #FFA800;
+    font-weight: bold;
+    font-size: 5vh;
+
+}
 
 
 

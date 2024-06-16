@@ -10,8 +10,8 @@ function App1(props) {
         <>
             <Routes>
                 <Route path="/GamePage" element={<GamePage data={props.data} login={props.login} newOrOldUser={props.newOrOldUser}/>}/>
-                <Route path='/Earn' element={<Earn />}/>
-                <Route path="/invite" element={<Invite refLink={props.refLink}/>}/>
+                <Route path='/Earn' element={<Earn data={props.data} earns={props.earns}/>}/>
+                <Route path="/invite" element={<Invite data={props.data}/>}/>
                 <Route path="/boost" element={<Boost />}/>
             </Routes>
             <Options/>
