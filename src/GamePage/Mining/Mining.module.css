@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "DS-Digital";
+    src: url('../../resource/DS-DIGIB.TTF');
+}
+
 .Mining{
     background-color: #1f1f1f;
     border-radius: 15px;
@@ -23,6 +28,7 @@
     align-content: center;
     justify-content: center;
     user-select: none;
+    font-family: DS-Digital;
 }
 
 .MineProgress{

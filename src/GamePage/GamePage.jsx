@@ -15,7 +15,7 @@ function GamePage(props) {
             <Matrix/>
             <div className={s.Content}>
                 <Claims data={props.data} login={props.login} newOrOldUser={props.newOrOldUser}/>
-                <Mining/>
+                <Mining data={props.data}/>
                 <Options/>
             </div>
         </div>

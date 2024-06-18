@@ -2,6 +2,7 @@ import s from "./StartPage.module.css"
 import "../resource/mask.png"
 import Writer from "./Writer.jsx";
 import { NavLink} from "react-router-dom";
+import {useState} from "react";
 
 function StartPage(props) {
     let login = props.login;
@@ -20,6 +21,8 @@ function StartPage(props) {
     const startTimes = props?.data?.startTimes;                                                                  // Время прошлого старта майнинга
     const mineTime = props?.data?.mineTime;                                                                      // Время майнинга
     let time = seconds - startTimes;                                                                             // Сколько времени майнинга прошло
+
+
 
     async function startMining() {
         login = "AhSR26"

@@ -15,7 +15,7 @@ let page;
 if (!login || login === "undefined" || login == null) page = <Navigate to='/tryAgain' replace={true}/>          // Если логина нет, значит TryAgain
 const reqGetUserData = {method: "POST", headers: {'login': login, "referal": referal}}
 
-let data = await User.getData(login, reqGetUserData); console.log("Info user ", data)                         // Данные о пользователе
+let data = await User.getData(login, reqGetUserData); console.log("Info user ", data)                           // Данные о пользователе
 let earns = await Earns.getEarns(login, reqGetUserData);
 
 function App() {
