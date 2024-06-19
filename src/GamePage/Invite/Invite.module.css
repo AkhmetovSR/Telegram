@@ -1,7 +1,7 @@
 .Invite {
     background-color: black;
-    height: 99.5vh;
-    width: 99.5vw;
+    height: 100vh;
+    width: 100vw;
     /*border: 2px solid greenyellow;*/
     position: absolute;
     color: white;
@@ -13,73 +13,54 @@
     -webkit-user-drag: none;
 }
 
-.Title{
-    position: absolute;
-    color: green;
-    font-size: 6vh;
-    font-weight: bolder;
-    left: 37vw;
-    top: 2vh;
-}
-
 .DivLinkInvite{
+    /*border: 1px solid green;*/
     background-color: #1f1f1f;
     border-radius: 15px;
     opacity: 80%;
     width: 80vw;
-    height: 25vh;
+    /*height: 25vh;*/
     display: grid;
     position: absolute;
     top: 14vh;
     left: 10vw;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto;
     padding: 3vw;
     align-content: center;
-    justify-content: center;
+    /*justify-content: center;*/
 }
 
-.TitleInvite{
+.Title{
     /*border: 1px solid red;*/
     font-weight: bolder;
     text-align: center;
     font-size: 5vw;
-}
-.Link{
-    /*border: 1px solid red;*/
     display: grid;
     align-content: center;
-    justify-items: center;
-    justify-self: center;
-    background-color: #3d3d3d;
-    opacity: 80%;
-    border-radius: 5px;
-    width: 63vw;
-    height: 7vw;
-    padding: 1vw;
-    font-size: 4vw;
-    font-weight: lighter;
-    overflow: hidden;
-    white-space: nowrap;
 }
 
-/*.TwoBtns{*/
-/*    display: grid;*/
-/*    justify-items: center;*/
-/*    !*grid-template-columns: auto;*!*/
-/*    border: 1px solid red;*/
-/*    width: 70vw;*/
-/*    padding: 3.4vw;*/
-/*}*/
-.divBtnCopyLink, .divShare{
-    /*border: 1px solid red;*/
-    width: 95%;
+
+.TwoBtns{
     display: grid;
     align-content: center;
-    justify-items: center;
-    background-color: #ececec;
-    border-radius: 5px;
-    height: 7vw;
-    color: #1f1f1f;
+    justify-content: center;
+    /*border: 1px solid red;*/
+    padding: 3.4vw;
+}
+
+.BtnShare {
+    /*border: 1px solid red;*/
+    border-radius: 10px;
+    height: 9vw;
+    width: 60vw;
+    background-color: rgba(131, 131, 131, 0.57);
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    color: white;
+    font-size: 5vw;
+
 }
 
 .Frens{
@@ -93,12 +74,58 @@
     left: 10vw;
     padding: 3vw;
 }
-.BtnShare {
-    border-radius: 5px;
-    width: 100%;
-    background-color: grey;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -webkit-user-drag: none;
+
+.divImg{
+    /*border: 1px solid red;*/
+    display: grid;
+    align-content: center;
+    justify-items: center;
 }
+.Img{
+    width: 50%;
+}
+.taskFrens{
+    /*border: 1px solid red;*/
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 2vw;
+}
+.coinsForFren{
+    /*border: 1px solid red;*/
+    padding: 2vw;
+}
+.Coins{
+    font-family: DS-Digital;
+    font-size: 5vw;
+    color: #FFA800;
+}
+
+/*.Link{*/
+/*    !*border: 1px solid red;*!*/
+/*    display: grid;*/
+/*    align-content: center;*/
+/*    justify-items: center;*/
+/*    justify-self: center;*/
+/*    background-color: #3d3d3d;*/
+/*    opacity: 80%;*/
+/*    border-radius: 5px;*/
+/*    width: 63vw;*/
+/*    height: 7vw;*/
+/*    padding: 1vw;*/
+/*    font-size: 4vw;*/
+/*    font-weight: lighter;*/
+/*    overflow: hidden;*/
+/*    white-space: nowrap;*/
+/*}*/
+
+/*.divBtnCopyLink, .divShare{*/
+/*    !*border: 1px solid red;*!*/
+/*    width: 95%;*/
+/*    display: grid;*/
+/*    align-content: center;*/
+/*    justify-items: center;*/
+/*    background-color: #ececec;*/
+/*    border-radius: 5px;*/
+/*    height: 7vw;*/
+/*    color: #1f1f1f;*/
+/*}*/

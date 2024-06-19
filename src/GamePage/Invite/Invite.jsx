@@ -1,6 +1,7 @@
 import s from "./Invite.module.css"
 import Frens from "../../getFrens"
 import GreenCoin from "../../resource/greenCoin.png";
+import PresentBox from "../../resource/present2.png";
 
 const tg = window.Telegram.WebApp;
 let login = tg.initDataUnsafe?.user?.username;
@@ -23,22 +24,26 @@ function Invite(props) {
 
     return (
         <div className={s.Invite}>
-            {/*<div className={s.Title}>Frens</div>*/}
             <div className={s.DivLinkInvite}>
-                <div className={s.TitleInvite}>INVITE FRENS</div>
-                {/*<div className={s.Link} id="refLink">{props.data[0].refLink}</div>*/}
+                <div className={s.Title}>INVITE FRENS</div>
+                <div className={s.taskFrens}>
+                    <div className={s.divImg}><img src={PresentBox} className={s.Img} alt='a'/></div>
+                    <div className={s.coinsForFren}>
+                        <div className={s.forYou}><span className={s.Coins}>+10 000</span> for you</div>
+                        <div className={s.forFren}><span className={s.Coins}>+10 000</span> for fren</div>
+                    </div>
+                </div>
                 <div className={s.TwoBtns}>
-                    {/*<div className={s.divBtnCopyLink}><button className={s.BtnCopyLink}>Copy Link</button></div>*/}
                     <a href={ref}><button className={s.BtnShare}>Invite</button></a>
                 </div>
             </div>
 
-            <div className={s.Frens}>
-                <div className={s.TitleInvite}>FRENS</div>
-                <div>
-                    {fren}
-                </div>
-            </div>
+            {/*<div className={s.Frens}>*/}
+            {/*    <div className={s.TitleInvite}>FRENS</div>*/}
+            {/*    <div>*/}
+            {/*        {fren}*/}
+            {/*    </div>*/}
+            {/*</div>*/}
         </div>
     );
 }

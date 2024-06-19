@@ -9,8 +9,6 @@ function Mining(props) {
     const mineTime = data?.mineTime;
     let mSec = profit / mineTime;
     let tLate = now - startTimes
-    // console.log(mSec)
-    console.log(tLate)
 
     let M = Math.round(mSec * tLate)
 

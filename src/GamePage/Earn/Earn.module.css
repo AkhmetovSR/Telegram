@@ -1,33 +1,39 @@
 .Earn {
+    /*border: 1px solid green;*/
     background-color: black;
     height: 100vh;
     width: 100vw;
-    /*border: 2px solid greenyellow;*/
     position: absolute;
     color: white;
-    display: grid;
-    justify-items: center;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
 }
-
-.Title{
-    position: absolute;
-    color: green;
-    font-size: 6vh;
-    font-weight: bolder;
-    left: 37vw;
-    top: 25vh;
-}
-
-.Earns{
-    /*border: 2px solid green;*/
-    width: 80vw;
-    height:40vh;
+.Main{
+    /*border: 1px solid red;*/
     display: grid;
     grid-template-rows: auto;
+    align-content: center;
+    justify-content: center;
+    height: 75vh;
+    width: 90vw;
     position: absolute;
+    top: 5vh;
+    left: 5vw;
+ }
+
+.Earns{
+    /*border: 2px solid red;*/
+    width: 80vw;
+    /*height: 80%;*/
+    display: grid;
+    grid-template-rows: auto;
+    /*position: absolute;*/
     top: 36vh;
-    overflow: hidden;
+    overflow: auto;
     align-content: start;
+    padding: 3vw;
 }
 .Earns::-webkit-scrollbar{
     width: 0;
@@ -35,9 +41,6 @@
 }
 
 .Task{
-    /*border: 1px solid red;*/
-    /*position: absolute;*/
-    height: 12vh;
     bottom: 0;
     background-color: #1f1f1f;
     border-radius: 15px;
@@ -45,6 +48,7 @@
     display: grid;
     grid-template-columns: 20% 55% 25%;
     margin: 1vw;
+    padding: 2vw;
 }
 
 .DivImgTask{
@@ -60,13 +64,13 @@
 
 .ImgCoin{
     /*border: 1px solid blue;*/
-    /*width: 100%;*/
+    width: 70%;
 }
 
 .BodyEran{
     /*border: 1px solid red;*/
     display: grid;
-    align-content: center;
+    /*align-content: center;*/
 }
 .TaskText{
     /*border: 1px solid red;*/
@@ -76,19 +80,23 @@
 }
 .CoinQuantity{
     display: grid;
-    grid-template-columns: 13% 85%;
+    grid-template-columns: 20% 80%;
 }
 .divCoin{
-    padding: 8%;
-    display: grid;
-    align-content: end;
+    /*padding: 10%;*/
+    /*display: grid;*/
+    align-content: center;
     /*border: 1px solid red;*/
 }
 .divUpCoin{
     color: #FFA800;
-    font-size: 4vw;
+    font-size: 6vw;
     font-weight: bolder;
+    font-family: DS-Digital;
     /*border: 1px solid red;*/
+    display: grid;
+    align-content: end;
+    /*padding: 10%;*/
 }
 .divBtnClaim{
     display: grid;
@@ -120,25 +128,30 @@
 
 }
 
-.GetMoreCoinsImg{
-    position: absolute;
+.divGetMoreImg{
+    /*border: 1px solid red;*/
     display: grid;
     align-content: center;
-    justify-content: center;
-    top: 8vh;
-    left: 35%;
-    width: 18vh;
+    justify-items: center;
+    /*padding: 3vw;*/
+}
+.GetMoreCoinsImg{
+    /*border: 1px solid red;*/
+    /*position: absolute;*/
+    /*display: grid;*/
+    /*align-content: center;*/
+    /*justify-content: center;*/
+    /*top: 8vh;*/
+    /*left: 40vw;*/
+    width: 35%;
     opacity: 80%;
 }
 .textGetMoreCoins{
     text-align: center;
     /*border: 1px solid red;*/
-    width: 50vw;
     font-weight: bold;
     font-size: 3vh;
-    position: absolute;
-    top: 30vh;
-    left: 25vw;
+    padding: 2vw;
 
 }
 
@@ -146,7 +159,12 @@
     color: #FFA800;
     font-weight: bold;
     font-size: 5vh;
-
+    position: absolute;
+    width: 100%;
+    /*left: 5vw;*/
+    /*border: 1px solid red;*/
+    text-align: center;
+    bottom: 15vh;
 }
 
 

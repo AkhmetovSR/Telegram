@@ -44,3 +44,9 @@
     border-radius: 20px;
     height: 1.5vh;
 }
+.Progress::-webkit-progress-bar, .Progress::-webkit-progress-value{
+    border-radius: 20px;
+}
+.Progress::-webkit-progress-value{
+    background-color: #00FF00FF;
+}

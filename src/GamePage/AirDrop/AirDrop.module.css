@@ -1,0 +1,19 @@
+.AirDrop {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    /*border: 2px solid greenyellow;*/
+    position: absolute;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+}
+.Soon{
+    color: #FFA800;
+    font-weight: bold;
+    font-size: 5vh;
+}

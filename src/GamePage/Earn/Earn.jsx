@@ -1,14 +1,7 @@
 import s from "./Earn.module.css"
-import GetEarn from "../../getEarns"
-import Earn1 from "../../resource/earn1.png"
 import GreenCoin from "../../resource/greenCoin.png"
 import GetMoreCoins from "../../resource/getMoreCoin1.png"
-import Rocket from "../../resource/rocket.png"
-import BoxPresent from "../../resource/boxPresent.png"
-import Firework from "../../resource/Firework.png"
-import Present2 from "../../resource/present2.png"
 import Earns from "../../getEarns";
-import {useState} from "react";
 
 function Earn(props) {
 // При загрузке получаем все earns и получаем earns пользователя. Далее нужно как то убрать из основного массива, массив пользователя и отобразить на странице
@@ -21,11 +14,11 @@ function Earn(props) {
         let earns = await Earns.EarnComplete(login, reqGetUserData);
     }
 
-    const arr1 = props.earns
+    const arr1 = props?.earns
     let arr2 = (props?.data[0]?.earns)
-    if(arr2 !== [] || arr2 !== undefined || arr2 !== ''){
+    if(arr2 !== null){
+        console.log('arrw', arr2)
         arr2 = arr2.split(", ").map(Number)
-        console.log(arr2)
         for (let i = 0; i < arr2.length; i++) {
             delete arr1[arr2[i] - 1]
         }
@@ -60,10 +53,12 @@ function Earn(props) {
 
     return (
         <div className={s.Earn}>
-            <div><img src={GetMoreCoins} className={s.GetMoreCoinsImg}/></div>
-            <div className={s.textGetMoreCoins}>Get more coins</div>
-            {soon}
-            <div className={s.Earns}>{listEarn}</div>
+            <div className={s.Main}>
+                <div className={s.divGetMoreImg}><img src={GetMoreCoins} className={s.GetMoreCoinsImg}/></div>
+                <div className={s.textGetMoreCoins}>Get more coins</div>
+                {soon}
+                <div className={s.Earns}>{listEarn}</div>
+            </div>
         </div>
     );
 }
