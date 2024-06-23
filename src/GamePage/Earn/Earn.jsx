@@ -9,7 +9,7 @@ function Earn(props) {
         const earn_id = e.target.id;
         const price = e.target.value;
         const claims = Number(props.data[0].claims) + Number(price);
-        let login = "AhSR26"
+        // let login = "AhSR26"
         const reqGetUserData = {method: "POST", headers: {'login': login, 'earn_id': earn_id, "claims": claims}}
         let earns = await Earns.EarnComplete(login, reqGetUserData);
     }

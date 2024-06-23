@@ -10,7 +10,7 @@ window.Telegram.WebApp.ready();
 window.Telegram.WebApp.expand();
 let referal = tg?.initDataUnsafe?.start_param;
 let login = tg.initDataUnsafe?.user?.username;
-login = "AhSR26"
+// login = "AhSR26"
 let page;
 if (!login || login === "undefined" || login == null) page = <Navigate to='/tryAgain' replace={true}/>          // Если логина нет, значит TryAgain
 const reqGetUserData = {method: "POST", headers: {'login': login, "referal": referal}}

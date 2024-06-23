@@ -6,7 +6,7 @@ import PresentBox from "../../resource/present2.png";
 const tg = window.Telegram.WebApp;
 let login = tg.initDataUnsafe?.user?.username;
 
-login = "AhSR26"
+// login = "AhSR26"
 const reqGetFrens = {
     method: "POST",
     headers: {'login': login}

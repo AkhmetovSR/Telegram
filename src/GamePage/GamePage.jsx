@@ -7,7 +7,7 @@ import Options from "./Options/Options.jsx";
 
 const tg = window.Telegram.WebApp;
 let login = tg.initDataUnsafe?.user?.username;
-login = "AhSR26"
+// login = "AhSR26"
 
 function GamePage(props) {
     return (

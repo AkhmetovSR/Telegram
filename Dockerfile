@@ -1,7 +1,7 @@
-FROM node:lts-slim
+FROM node:slim
 WORKDIR /tg/
-COPY public/ /tg/public
-COPY src/ /tg/src
-COPY package.json/ /tg/
+COPY package.json package.json
+COPY package-lock.json package-lock.json
+COPY . .
 RUN npm install
-CMD ["($env:HTTPS = 'true') -and (npm start)"]
+CMD ["npm", "start"]
