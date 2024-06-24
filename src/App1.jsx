@@ -22,3 +22,12 @@ function App1(props) {
 }
 
 export default App1;
+
+//  "scripts": {
+//     "dev": "vite",
+//     "build": "tcs && vite build",
+//     "start": "react-scripts start",
+//     "build": "react-scripts build",
+//     "test": "react-scripts test",
+//     "eject": "react-scripts eject"
+//   }
