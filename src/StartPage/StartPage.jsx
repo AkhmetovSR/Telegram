@@ -33,14 +33,14 @@ function StartPage(props) {
 
         if (user === "new") {                                                                                    // Если пользователь новый, при нажатии на кнопку StartMining отправляется POST запрос на добавление пользователя в БД
             // console.log("new fetch")
-            await fetch("http://localhost:8888/addNewUserAndStartMining", reqStart)
+            await fetch("http://172.17.0.3/addNewUserAndStartMining", reqStart)
                 .then(r => console.log(r))
             props.func()
         }
 
         if (user === "old" && time > mineTime) {                                                                  // Если пользователь старый, отправляется запрос на добавление profit в claims
             // console.log("old fetch")
-            await fetch("http://localhost:8888/claimProfit", reqStart)
+            await fetch("http://172.17.0.3/claimProfit", reqStart)
                 .then(r => console.log(r))
             {props.func()}                                                                                        // callback-функция
         }
