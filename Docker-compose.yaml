@@ -1,0 +1,31 @@
+version: '3'
+services:
+  front:
+    stdin_open: true
+    build:
+      context: .
+      dockerfile: Dockerfile
+    expose:
+      - 8080
+    ports:
+      - "8080:80"
+
+
+        #  server:
+#    image: nginx:1.27.0
+#    ports:
+#      - "80:80"
+#    depends_on:
+#      - front
+#    links:
+#      - front
+#
+#  front:
+#      image: akhmetovsr/tgrepository1:myapp1
+#      volumes:
+#        - ../..var/www/build:./build # Папка с сбилденным файлом будет www, чтобы nginx брал оттуда статику
+
+
+
+
+#    добавить ожидание запуска всех модулей

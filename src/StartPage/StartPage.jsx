@@ -33,7 +33,7 @@ function StartPage(props) {
 
         if (user === "new") {                                                                                    // Если пользователь новый, при нажатии на кнопку StartMining отправляется POST запрос на добавление пользователя в БД
             // console.log("new fetch")
-            await fetch("http://172.17.0.3/addNewUserAndStartMining", reqStart)
+            await fetch("http://localhost:3301/addNewUserAndStartMining", reqStart)
                 .then(r => console.log(r))
             props.func()
         }
